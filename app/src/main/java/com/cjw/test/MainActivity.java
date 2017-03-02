@@ -15,15 +15,22 @@ import com.cjw.test.vptest.ViewPagerStateAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getName();
+
+    @BindView(R.id.vp)
+    ViewPager vp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ButterKnife.bind(this);
 
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new FragmentOne());
@@ -31,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentList.add(new FragmentThree());
         fragmentList.add(new FragmentFour());
         fragmentList.add(new FragmentFive());
-
-        ViewPager vp = (ViewPager) findViewById(R.id.vp);
 
         ViewPagerStateAdapter adapterState = new ViewPagerStateAdapter(getSupportFragmentManager(), fragmentList, null);
         vp.setAdapter(adapterState);

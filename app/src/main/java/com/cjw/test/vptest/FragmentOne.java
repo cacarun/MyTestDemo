@@ -29,6 +29,12 @@ public class FragmentOne extends Fragment {
     }
 
     @Override
+    public void onDestroyView() {
+        Log.e("CJW", "onDestroyView 11111111111");
+        super.onDestroyView();
+    }
+
+    @Override
     public void onDestroy() {
         Log.e("CJW", "onDestroy 11111111111");
         super.onDestroy();
