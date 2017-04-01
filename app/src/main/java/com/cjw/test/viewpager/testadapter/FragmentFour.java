@@ -1,4 +1,4 @@
-package com.cjw.test.vptest;
+package com.cjw.test.viewpager.testadapter;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,29 +14,29 @@ import com.cjw.test.R;
  * Created by CJW on 2017/3/1.
  */
 
-public class FragmentThree extends Fragment {
+public class FragmentFour extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.e("CJW", "onCreateView 3333333333");
-        return inflater.inflate(R.layout.fragment_three, container, false);
+        Log.e("CJW", "onCreateView 44444444");
+        return inflater.inflate(R.layout.fragment_four, container, false);
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-        Log.e("CJW", "onCreate 3333333333");
+        Log.e("CJW", "onCreate 44444444");
         super.onCreate(savedInstanceState);
     }
 
     @Override
     public void onDestroyView() {
-        Log.e("CJW", "onDestroyView 33333333333");
+        Log.e("CJW", "onDestroyView 444444444");
         super.onDestroyView();
     }
 
     @Override
     public void onDestroy() {
-        Log.e("CJW", "onDestroy 3333333333");
+        Log.e("CJW", "onDestroy 4444444444");
         super.onDestroy();
     }
 }

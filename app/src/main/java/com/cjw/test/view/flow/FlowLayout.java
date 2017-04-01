@@ -1,4 +1,4 @@
-package com.cjw.test.flow;
+package com.cjw.test.view.flow;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 流式布局
+ */
 public class FlowLayout extends ViewGroup {
 
     private static final String TAG = "FlowLayout";

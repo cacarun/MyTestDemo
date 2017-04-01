@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/fragmentParent"
-        android:name="com.cjw.test.dynamicvp.FragmentParent"
+        android:name="com.cjw.test.viewpager.testdynamic.FragmentParent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/buttonAddPage"

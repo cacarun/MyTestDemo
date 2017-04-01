@@ -1,4 +1,4 @@
-package com.cjw.test.dynamicvp;
+package com.cjw.test.viewpager.testdynamic;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.cjw.test.dynamicvp;
+package com.cjw.test.viewpager.testdynamic;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,10 @@ import android.widget.Toast;
 
 import com.cjw.test.R;
 
-public class MainActivityDynamicVP extends AppCompatActivity {
+/**
+ * fragment 动态删除
+ */
+public class TestVPDynamicActivity extends AppCompatActivity {
     Button buttonAddPage;
     FragmentParent fragmentParent;
     TextView textView;
@@ -17,7 +20,7 @@ public class MainActivityDynamicVP extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_dynamicvp);
+        setContentView(R.layout.activity_viewpager_dynamic);
         getIDs();
         setEvents();
 
@@ -37,7 +40,7 @@ public class MainActivityDynamicVP extends AppCompatActivity {
                     fragmentParent.addPage(textView.getText() + "");
                     textView.setText("");
                 } else {
-                    Toast.makeText(MainActivityDynamicVP.this, "Page name is empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TestVPDynamicActivity.this, "Page name is empty", Toast.LENGTH_SHORT).show();
                 }
             }
         });

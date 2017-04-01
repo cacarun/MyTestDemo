@@ -1,4 +1,4 @@
-package com.cjw.test.dynamicvp;
+package com.cjw.test.viewpager.testdynamic;
 
 import android.content.Context;
 import android.support.design.widget.TabLayout;
